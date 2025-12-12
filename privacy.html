@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — ASIN State Checker</title>
+  <meta name="description" content="Privacy policy for the Chrome extension that collects product IDs and checks ASIN availability across US states. No personal data is collected.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 24px;
+    }
+    p, li {
+      font-size: 15px;
+      color: #444;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>Effective date: <strong>December 2025</strong></p>
+
+    <p>This browser extension extracts publicly visible product information from Amazon pages (such as ASINs, titles, prices, variations, images, and availability). All processing happens locally in the user's browser. This extension does not collect, store, transmit, or share any personally identifiable information.</p>
+
+    <h2>Information We Collect</h2>
+    <p><strong>None.</strong> The extension does not collect any personal information, browsing history, authentication data, financial information, or sensitive data of any type.</p>
+
+    <h2>How Data Is Processed</h2>
+    <ul>
+      <li>All product extraction and analysis occurs locally in the user's browser.</li>
+      <li>No data is transmitted to external servers.</li>
+      <li>Temporary settings and collected product data are stored only in chrome.storage.local.</li>
+    </ul>
+
+    <h2>Permissions and Use</h2>
+    <ul>
+      <li><strong>activeTab</strong> — Reads product details from the Amazon page the user is viewing.</li>
+      <li><strong>scripting</strong> — Executes scripts to extract ASINs and product variations.</li>
+      <li><strong>storage</strong> — Stores temporary extension settings and data locally.</li>
+      <li><strong>downloads</strong> — Allows CSV export of collected product information.</li>
+      <li><strong>clipboardWrite</strong> — Lets the user copy extracted data to the clipboard.</li>
+      <li><strong>alarms</strong> — Manages timing during automated ASIN availability checks.</li>
+      <li><strong>host permission for https://*.amazon.com/</strong> — Needed to access publicly visible Amazon product pages.</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>This extension does not share, sell, or transfer any user data to third parties. No analytics or tracking systems are used.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>This extension is not intended for children and does not knowingly collect any data from individuals under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If the extension's functionality changes and begins collecting or transmitting user data, this policy will be updated accordingly.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, contact the developer at: <strong>your-email@gmail.com</strong></p>
+
+    <footer>
+      <p>&copy; <span id="year"></span> ASIN State Checker. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
